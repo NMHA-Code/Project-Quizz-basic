@@ -1,0 +1,37 @@
+$font-heading: "Poppins", "Inter", system-ui, -apple-system, sans-serif;
+$font-body: "Nunito", "Roboto", system-ui, -apple-system, sans-serif;
+$orengers-color: #ffa401;
+$textBlack-color: #353535;
+$textWhite-color: #ffffff;
+$placehoder-color: #eaf1fb;
+$focus-color: #ff6a07;
+$correct-color: #117505;
+$wrong-color: #f21d17;
+$box-shadows: 0 4px 8px #ddd;
+$border-radius: 8px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+}
+main {
+  flex: 1;
+  min-height: 83.2vh;
+  margin-bottom: 75px;
+  font-family: $font-body;
+}

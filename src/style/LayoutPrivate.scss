@@ -1,0 +1,151 @@
+@import 'main';
+
+// home
+.home {
+    display: grid;
+    gap: 1rem;
+    font-family: $font-body;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 1px solid #333;
+        padding-bottom: 1rem;
+    }
+
+    &__info {
+        display: grid;
+        gap: 1rem;
+    }
+}
+
+// navlinks
+.navlinks_private {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: $border-radius;
+    color: $textBlack-color;
+    transition: all .3s ease;
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+}
+
+// table
+table,
+th,
+td {
+    border: 1px solid;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    padding: 10px;
+    height: 50px;
+}
+
+// Topic
+.topic {
+    font-family: $font-body;
+}
+
+// Result
+.result {
+    display: grid;
+    gap: 1rem;
+
+    &__question {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+
+        &-item {
+            display: grid;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                .title-correct {
+                    background: green;
+                    color: #fff;
+                    padding: 0.2rem 0.5rem;
+                    font-weight: 550;
+                    border-radius: 8px;
+                }
+                .title-wrong {
+                    background: red;
+                    color: #fff;
+                    padding: 0.2rem 0.5rem;
+                    font-weight: 550;
+                    border-radius: 8px;
+                }
+            }
+            &-info{
+                .answer-line{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+
+    &__redo {
+        margin-top: 1rem;
+    }
+}
+.result-color-default {
+    color: #333;
+}
+
+.result-color-green {
+    color: green;
+}
+
+.result-color-red {
+    color: red;
+}
+
+// Excerse
+.excerse{
+    display: grid;
+    gap: 1rem;
+    &__question{
+        padding: 1rem;
+        form{
+            display: grid;
+            gap: 1rem;
+            .info{
+                display: grid;
+                gap: 0.5rem;
+                &__title{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3rem;
+                }
+                &__question{
+                    display: grid;
+                    gap: 0.3rem;
+                    &-item{
+                        display: flex;
+                        align-items: center;
+                        gap: 0.4rem;
+                    }
+                }
+            }
+        }   
+    }
+}
