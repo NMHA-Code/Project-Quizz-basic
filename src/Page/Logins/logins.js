@@ -23,11 +23,11 @@ function Login() {
                     <form onSubmit={handleSubmit}>
                         <h2>Login Quiz</h2>
                         <div className="login__form-input">
-                            <input placeholder="Email" type="email" required
+                            <input placeholder="nguyen@example.com" type="email" required
                                 value={email}
                                 onChange={(e) => setemail(e.target.value)}
                             />
-                            <input placeholder="Password" type="password" required
+                            <input placeholder="pass1234" type="password" required
                                 value={pass}
                                 onChange={(e) => setpass(e.target.value)}
                             />
