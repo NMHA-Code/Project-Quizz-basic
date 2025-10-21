@@ -1,5 +1,5 @@
-const API_DOMAIN = 'http://localhost:3002/';
-
+// const API_DOMAIN = 'http://localhost:3002/';
+const API_DOMAIN = 'https://databasequizz.vercel.app/';
 
 // Get
 export const Get = async (patch) => {
